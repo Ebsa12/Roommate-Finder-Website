@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Roommate FINDER</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='SE350.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="navbar">
+                <a href="index2.html">HOME</a>
+                <a href="#">CONTACT</a>
+                <a href="index3.html">ABOUT US</a>
+                <a href="#">SERVICES</a>
+            </div>
+            <button class="button"><a href="index3.html">LOGIN</a></button>
+        </div>
+        <div class="content">
+            <h1>ROOMMATE FINDER</h1>
+            
+            <!-- Button linked to the PDF file -->
+            <button class="button"><a href="{{ url_for('static', filename='project1.pdf') }}" target="_blank">PROJECT PROPOSAL</a></button>
+            <button class="button"><a href="{{ url_for('static', filename='project2.pdf') }}" target="_blank">INITIAL PRESENTATION</a></button>
+            <button class="button"><a href="{{ url_for('static', filename='project3.pdf') }}" target="_blank">FINAL PRESENTATION</a></button>
+        </div>
+    </div>
+</body>
+</html>
